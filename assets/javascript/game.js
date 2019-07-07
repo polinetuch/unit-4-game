@@ -26,6 +26,20 @@ $(document).ready(function() {
   $(".styleImages").on("click", function() {
     userGussedNumber = userGussedNumber + parseInt($(this).val());
     $(".displayValueFromUserGuess").text("Your Guess: " + userGussedNumber);
+    userGussedNumber = userGussedNumber + parseInt($(this).val());
+    $(".displayValueFromUserGuess").text("Your Guess: " + userGussedNumber);
 
+    //if player wins, increase the wins counter and display message Well done!
+    if (userGussedNumber === randomTargetNumber) {
+      // display the number of wins after guessing
+      winsCounter++;
+      $(".displayWinOrLoseText").text("Well done!");
 
+      // if the player losses, increase the losses counter and display message Try again later!
+    } else if (userGussedNumber > randomTargetNumber) {
+      // display the number of losses after guessing
+      lossesCounter++;
+      $(".displayWinOrLoseText").text("Try again later!");
+    }
+  });
 });
