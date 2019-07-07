@@ -5,7 +5,11 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap"
+      href="https://fonts.googleapis.com/css?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script|Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -15,6 +19,14 @@
         <h1>Cystrals Collector!</h1>
       </div>
     </div>
+
+    <!-- <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <h3 class="numberDisplayedForUser" id="showNumber">Your Guess:</h3>
+              </div>
+            </div>
+          </div> -->
 
     <div class="container">
       <div class="row" id="paragraphRowStyle">
@@ -36,37 +48,38 @@
     </div>
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <h3 class="numberDisplayedForUser" id="showNumber">Your Guess:</h3>
-        </div>
-      </div>
-      <div class="row">
+      <div class="row" id="h3Styling">
         <h3 class="displayWinOrLoseText"></h3>
         <h3 class="displayNumberOfWins">Wins:</h3>
         <h3 class="displayNumberOfLosses">Loses</h3>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-3 image1 displayImage1HiddenVal">
-        <img src="./assets/images/ruby.jpg" />
-      </div>
-      <div class="col-sm-3 image2 displayImage2HiddenVal">
-        <img src="./assets/images/gold.jpg" />
-      </div>
-      <div class="col-sm-3 image3 displayImage3HiddenVal">
-        <img src="./assets/images/gem.jpg" />
-      </div>
-      <div class="col-sm-3 image4 displayImage4HiddenVal">
-        <img src="./assets/images/diamond.jpg" />
+
+    <div class="container">
+      <div class="row" id="targetNumberStyle">
+        <div class="row displayValueFromCystrals">Target Number:</div>
       </div>
     </div>
 
     <div class="container">
-      <div class="row userTotalScore">Your Score</div>
+      <div class="row" id="imageBackground">
+        <div class="col-sm-3 displayImageOneHiddenVal">
+          <img class="styleImages" src="./assets/images/ruby.jpg" />
+          <img class="styleImages" src="./assets/images/gold.jpg" />
+          <img class="styleImages" src="./assets/images/gem.jpg" />
+          <img class="styleImages" src="./assets/images/diamond.jpg" />
+        </div>
+      </div>
     </div>
 
-    <div class="row displayValueFromCystrals"></div>
+    <div class="container">
+      <div class="row" id="scoreStyling">
+        <div class="row userTotalScore">Your Guess:</div>
+      </div>
+    </div>
+
+    <footer>Created By Polinet Uch</footer>
+
     <script src="assets/javascript/game.js"></script>
   </body>
 </html>
