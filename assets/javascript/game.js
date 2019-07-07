@@ -21,4 +21,11 @@ $(document).ready(function() {
 
   // display a random number generated from line 25 in the empty string of randomTargetNumber
   $(".displayValueFromCrystals").text("Target Number: " + randomTargetNumber);
+
+  // when player presses a key, add the random value generated to the HTML element
+  $(".styleImages").on("click", function() {
+    userGussedNumber = userGussedNumber + parseInt($(this).val());
+    $(".displayValueFromUserGuess").text("Your Guess: " + userGussedNumber);
+
+
 });
