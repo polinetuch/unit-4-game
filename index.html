@@ -4,6 +4,10 @@
     <title>Cystrals Collector</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -13,7 +17,7 @@
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row" id="paragraphRowStyle">
         <p>You will be given a random number at the start of the game.</p>
         <p>
           There are 4 crystals below. By clicking on the cystral, you will add a
@@ -33,31 +37,28 @@
 
     <div class="container">
       <div class="row">
-        <div class="col">
-          <h3 class="numberDisplayedForUser"></h3>
-        </div>
-        <div class="col">
-          <h3 class="displayWinOrLoseText"></h3>
-          <h3 class="displayNumberOfWins">Wins:</h3>
-          <h3 class="displayNumberOfLosses">Loses</h3>
+        <div class="col-lg-8">
+          <h3 class="numberDisplayedForUser" id="showNumber">Your Guess:</h3>
         </div>
       </div>
-    </div>
-
-    <div class="container">
       <div class="row">
-        <div class="col-sm-3 image1 displayImage1HiddenVal">
-          <img src="./assets/images/ruby.jpg" />
-        </div>
-        <div class="col-sm-3 image2 displayImage2HiddenVal">
-          <img src="./assets/images/gold.jpg" />
-        </div>
-        <div class="col-sm-3 image3 displayImage3HiddenVal">
-          <img src="./assets/images/gem.jpg" />
-        </div>
-        <div class="col-sm-3 image4 displayImage4HiddenVal">
-          <img src="./assets/images/diamond.jpg" />
-        </div>
+        <h3 class="displayWinOrLoseText"></h3>
+        <h3 class="displayNumberOfWins">Wins:</h3>
+        <h3 class="displayNumberOfLosses">Loses</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 image1 displayImage1HiddenVal">
+        <img src="./assets/images/ruby.jpg" />
+      </div>
+      <div class="col-sm-3 image2 displayImage2HiddenVal">
+        <img src="./assets/images/gold.jpg" />
+      </div>
+      <div class="col-sm-3 image3 displayImage3HiddenVal">
+        <img src="./assets/images/gem.jpg" />
+      </div>
+      <div class="col-sm-3 image4 displayImage4HiddenVal">
+        <img src="./assets/images/diamond.jpg" />
       </div>
     </div>
 
