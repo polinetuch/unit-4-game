@@ -38,12 +38,16 @@ $(document).ready(function() {
       // display the number of wins after guessing
       winsCounter++;
       $(".displayWinOrLoseText").text("Well done!");
+      // call the function to restart the game according to what is stated in the function
+      restartTheGame();
 
       // if the player losses, increase the losses counter and display message Try again later!
     } else if (userGussedNumber > randomTargetNumber) {
       // display the number of losses after guessing
       lossesCounter++;
       $(".displayWinOrLoseText").text("Try again later!");
+      // call the function to restart the game according to what is stated in the function
+      restartTheGame();
     }
   });
 });
