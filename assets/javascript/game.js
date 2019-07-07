@@ -4,23 +4,27 @@ $(document).ready(function() {
   var userGussedNumber = 0;
   var randomTargetNumber = "";
 
-  // image buttons to generate random number from 1 to 12
-  $(".btnImage01").val(Math.floor(Math.random() * 12) + 1);
-  $(".btnImage02").val(Math.floor(Math.random() * 12) + 1);
-  $(".btnImage03").val(Math.floor(Math.random() * 12) + 1);
-  $(".btnImage04").val(Math.floor(Math.random() * 12) + 1);
+  // create function to reset the button and random number values
+  function restartTheGame() {
+    // image buttons to generate random number from 1 to 12
+    $(".btnImage01").val(Math.floor(Math.random() * 12) + 1);
+    $(".btnImage02").val(Math.floor(Math.random() * 12) + 1);
+    $(".btnImage03").val(Math.floor(Math.random() * 12) + 1);
+    $(".btnImage04").val(Math.floor(Math.random() * 12) + 1);
 
-  // start the value of wins from 0
-  $(".displayNumberOfWins").text("Wins: " + winsCounter);
+    // start the value of wins from 0
+    $(".displayNumberOfWins").text("Wins: " + winsCounter);
 
-  // start the value of losses from 0
-  $(".displayNumberOfLosses").text("Losses: " + lossesCounter);
+    // start the value of losses from 0
+    $(".displayNumberOfLosses").text("Losses: " + lossesCounter);
 
-  // start the guessing value from 0 and the sum value will display in the userGuessedNumber
-  $(".displayValueFromUserGuess").text("Your Guess: " + userGussedNumber);
+    // start the guessing value from 0 and the sum value will display in the userGuessedNumber
+    $(".displayValueFromUserGuess").text("Your Guess: " + userGussedNumber);
 
-  // display a random number generated from line 25 in the empty string of randomTargetNumber
-  $(".displayValueFromCrystals").text("Target Number: " + randomTargetNumber);
+    // display a random number generated from line 25 in the empty string of randomTargetNumber
+    $(".displayValueFromCrystals").text("Target Number: " + randomTargetNumber);
+  }
+  restartTheGame();
 
   // when player presses a key, add the random value generated to the HTML element
   $(".styleImages").on("click", function() {
