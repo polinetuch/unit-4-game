@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cystrals Collector</title>
+    <title>Crystals Collector</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Acme&display=swap"
       rel="stylesheet"
@@ -12,22 +13,13 @@
       href="https://fonts.googleapis.com/css?family=Dancing+Script|Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <h1>Cystrals Collector!</h1>
+        <h1>Crystals Collector!</h1>
       </div>
     </div>
-
-    <!-- <div class="container">
-            <div class="row">
-              <div class="col-lg-8">
-                <h3 class="numberDisplayedForUser" id="showNumber">Your Guess:</h3>
-              </div>
-            </div>
-          </div> -->
 
     <div class="container">
       <div class="row" id="paragraphRowStyle">
@@ -52,42 +44,42 @@
       <div class="row" id="h3Styling">
         <h3 class="displayWinOrLoseText"></h3>
         <h3 class="displayNumberOfWins">Wins:</h3>
-        <h3 class="displayNumberOfLosses">Loses</h3>
+        <h3 class="displayNumberOfLosses">Losses:</h3>
       </div>
     </div>
 
     <div class="container">
       <div class="row" id="targetNumberStyle">
-        <div class="row displayValueFromCystrals">Target Number:</div>
+        <div class="row displayValueFromCrystals">Target Number:</div>
       </div>
     </div>
 
     <div class="container">
       <div class="row" id="imageBackground">
-        <div class="col-sm-3 displayImageOneHiddenVal">
+        <div class="col displayImageOneHiddenVal">
           <input
             type="image"
             src="./assets/images/ruby.jpg"
             class="styleImages btnImage01"
-            value=""
+            value="0"
           />
           <input
             type="image"
             src="./assets/images/gold.jpg"
             class="styleImages btnImage02"
-            value=""
+            value="0"
           />
           <input
             type="image"
             src="./assets/images/gem.jpg"
             class="styleImages btnImage03"
-            value=""
+            value="0"
           />
           <input
             type="image"
             src="./assets/images/diamond.jpg"
             class="styleImages btnImage04"
-            value=""
+            value="0"
           />
         </div>
       </div>
@@ -99,7 +91,7 @@
       </div>
     </div>
 
-    <footer>Created By Polinet Uch</footer>
+    <footer>Copyright @ Polinet Uch</footer>
 
     <script src="assets/javascript/game.js"></script>
   </body>

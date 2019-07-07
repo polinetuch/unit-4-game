@@ -21,15 +21,6 @@ h1 {
   font-family: "Source Code Pro", monospace;
 }
 
-/* #showNumber {
-  background-color: white;
-  border: 1px solid green;
-  text-align: center;
-  padding: 30px;
-  margin: 0;
-  font-family: "Source Code Pro", monospace;
-} */
-
 #h3Styling {
   background-color: white;
   border: 1px solid green;
@@ -46,6 +37,7 @@ h1 {
 }
 
 .styleImages {
+  text-align: center;
   width: 80px;
   height: 80px;
   padding: 20px;
