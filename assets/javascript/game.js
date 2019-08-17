@@ -29,7 +29,7 @@ $(document).ready(function() {
     $(".displayValueFromCrystals").text("Target Number: " + randomTargetNumber);
   }
   restartTheGame();
-
+  $;
   // when player presses a key, add the random value generated to the HTML element
   $(".styleImages").on("click", function() {
     // to pass the random number to user guess - the value is generated from the random math floor
